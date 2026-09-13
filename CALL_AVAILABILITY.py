@@ -1,12 +1,12 @@
 #Created for an undisclosed person.
 #I shouldn't even be showing this but no NDA was signed so here it is LOL
 #plus i want that additional contribution points ykyk B)
+
 #okay how about this:
 #LET ME TRY BRO.
 #WILL THE CALL HAPPEN?
 #This script is subject to change and is NOT final. I will add things as time goes on just because I can hehaeaeae
 
-#CONDITIONS TBA
 #VARIABLES
 print("-------------------------------------")
 print("----------INPUT INFORMATION----------")
@@ -35,3 +35,31 @@ print(person,"has eaten within 5 hours:",hasPersonEaten)
 print(partner,"has eaten within 5 hours:",hasPartnerEaten)
 print(person,"sleep duration:",sleepTimePerson)
 print(partner,"sleep duration:",sleepTimePartner)
+
+#CONDITIONS (TO BE MADE)
+print("---------------------------------")
+print("----------CAN WE CALL!?----------")
+if canPartnerCall and canPersonCall and canPersonAFK and canPartnerAFK and hasPersonEaten and hasPartnerEaten and sleepTimePerson>=6 and sleepTimePartner>=6:
+    print("YAY!!! YOU BOTH CAN CALL!!!! NO ISSUES!!!! :D")
+elif canPartnerCall:
+    print(person,"is kinda noob icl.")
+else:
+    print(partner,"is kinda noob icl.")
+
+
+
+#DISCARDED LINES:
+#wakeTimePerson = eval(input(f"How long has",{person}," been awake for? ->"))
+#wakeTimePartner = eval(input(f"How long has",{partner}," been awake for? ->"))
+#print(person,"has been awake for:",wakeTimePerson)
+#print(partner,"has been awake for:",wakeTimePartner)
+#^^^^ Above is too complicated to account for so we will leave these out for simplicity.
+
+#PROCESSING INFORMATION / CONDITIONS
+#if canPersonCall and canPartnerCall:
+#    callStatus = canPersonCall and canPartnerCall == "true"
+#else:
+#    callStatus = "false"
+#PROCESSED INPUTTED INFORMATION
+#print(callStatus)
+#^^^^^ Idk how to combine two variables into one and have it come out as true or false but i will figure it out some other time.
